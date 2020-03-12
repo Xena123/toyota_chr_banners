@@ -1,0 +1,239 @@
+@font-face {
+  font-family: toyota_bold;
+  src: url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_bd-webfont.eot);
+  src: url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_bd-webfont#iefix) format("embedded-opentype"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_bd-webfont.woff2) format("woff2"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_bd-webfont.woff) format("woff"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_bd-webfont.ttf) format("truetype"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_bd-webfont.svg#toyota_bold) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: toyota_regular;
+  src: url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_rg-webfont.eot);
+  src: url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_rg-webfont#iefix) format("embedded-opentype"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_rg-webfont.woff2) format("woff2"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_rg-webfont.woff) format("woff"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_rg-webfont.ttf) format("truetype"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay_rg-webfont.svg#toyota_bold) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: toyota_heavy;
+  src: url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay-heavy-webfont.eot);
+  src: url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay-heavy-webfont#iefix) format("embedded-opentype"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay-heavy-webfont.woff2) format("woff2"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay-heavy-webfont.woff) format("woff"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay-heavy-webfont.ttf) format("truetype"), url(https://s0.2mdn.net/creatives/assets/2532951/toyotadisplay-heavy-webfont.svg#toyota_bold) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+body,
+div,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+p {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased
+}
+
+body {
+  margin: 0;
+  padding: 0
+}
+
+a img {
+  border: 0
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  position: relative;
+  font-weight: 400!important
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 22px;
+  text-transform: uppercase
+}
+
+.underline--blk {
+  border-bottom: 1px solid #000;
+}
+
+.underline--blue {
+  border-bottom: 2px solid #2d78d2;
+}
+
+#img--bg {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  z-index: 0
+}
+
+#logo--slogan,
+#logo--toyota {
+  top: -61px;
+  z-index: 1;
+  width: 64px;
+  position: absolute;
+  right: 15px;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.11);
+}
+
+#logo--hybrid {
+  width: 65px;
+  right: 15px;
+  opacity: 0
+}
+
+#logo--business,
+#logo--hybrid {
+  bottom: 5px;
+  z-index: 1;
+  position: absolute
+}
+
+#logo--business {
+  max-width: 100%;
+  right: 100px;
+  width: 93px
+}
+
+#highlight-1,
+#highlight-2 {
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.frame {
+  color: #000;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: toyota_regular, Arial, Helvetica Neue, Helvetica, sans-serif
+}
+
+.text-block {
+  position: relative;
+  top: 16px;
+  left: 252px;
+}
+
+#frame--finance .text-block {
+  top: 4px;
+}
+
+#text-1,
+#text-2,
+#text-3,
+#text-4 {
+  position: relative;
+  top: 16px;
+  left: 252px;
+}
+
+#text-4 {
+  top: 17px;
+}
+
+.text--large {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.text--smallest {
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-bottom: 1px;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.text--tight {
+  line-height: 21px
+}
+
+.font--bold {
+  font-family: toyota_bold, Arial, Helvetica Neue, Helvetica, sans-serif
+}
+
+#terms {
+  position: absolute;
+  left: 5px;
+  font-size: 8px;
+  line-height: 1;
+  text-transform: none;
+  margin-top: 5px;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+#findoutmore,
+#terms {
+  font-family: toyota_regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 5px;
+}
+
+#findoutmore {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  top: 40px;
+  left: 252px;
+  text-transform: uppercase;
+}
+
+#findoutmore img {
+  position: relative;
+  top: 1px;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#arrow img {
+  animation: blink 1s;
+  animation-iteration-count: infinite;
+}
+
+.nudgeLeft {
+  transform: translate(-10px, 0px) rotate(0.001deg);
+  -webkit-transform: translate(-10px, 0px) rotate(0.001deg);
+  -ms-transform: translate(-10px, 0px) rotate(0.001deg);
+  -moz-transform: translate(-10px, 0px) rotate(0.001deg);
+}
+
+.transition-2 {
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}

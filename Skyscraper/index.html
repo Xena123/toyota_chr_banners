@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+  <title>Toyota - Skyscraper [FLEET]</title>
+  <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style type="text/css">
+  #container {
+    position: absolute;
+    border: 1px solid #000000;
+    overflow: hidden;
+    width: 120px;
+    height: 600px;
+    background-color: #000000;
+    color: transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #loading{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: inline-block;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  #loading_image{
+    position:absolute;
+    left:50%;
+    margin-left:-15px;
+    top:50%;
+    margin-top:-15px; 
+  }
+
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: block;
+    color: transparent;
+    text-decoration: none;
+    background: #FFFFFF;
+    cursor: pointer;
+    opacity: 0;
+  }
+  </style>
+
+  <style>
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+       /* IE10+ specific styles go here */  
+       #terms {
+        color: red !important;
+       }
+    }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+   <div id="container">
+
+    <div id="loading">
+        <!-- Loading Animation -->
+        <div id="loading_image">
+          <img src="loading.gif" alt="loading">
+        </div>
+    </div>
+    
+    <div id="overlay"></div>
+
+    <img id="img--bg-1" src="bg_01.jpg" alt="Image of Toyota C-HR">
+    <img id="img--bg-2" src="bg_02.jpg" alt="Image of Toyota C-HR">
+    <img id="logo--toyota" src="logo--toyota.jpg" width="72" alt="Toyota logo">
+    <img src="logo--hybrid.png" width="72" id="logo--hybrid" alt="Toyota hybrid logo">
+    <img src="highlight_01.png" id="highlight-1" alt="">
+    <img src="highlight_02.png" id="highlight-2" alt="">
+
+    <!-- Frame 1 -->    
+    <div class="frame" id="frame--title">
+      <div>
+        <h2 class="text--bold">
+          <div id="text-1">NEW</div>
+          <div class="transition-2" id="text-2">TOYOTA </div>
+          <div id="text-3">C-HR <br>HYBRID</div>
+        </h2>
+        
+      </div>
+    </div>
+
+    <!-- Frame 2 -->    
+    <div class="frame" id="frame--slogan">
+      <div>
+        <h2 class="text--bold">
+          <div id="text-4">LEAVE ORDINARY</div>
+          <div class="transition-2" id="text-5">BEHIND</div>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Frame 3 --> 
+    <div class="frame" id="frame--finance">
+      <div class="text-block">
+        <p class="fineprint underline--blk">Design</p>
+        <div class="underline--blue">
+          <h1 class="text--bold">£241</h1>
+          <p class="fineprint">+VAT PER MONTH*</p>
+        </div>
+        <h1 class="text--bold">£1,446</h1>
+        <p class="fineprint">+VAT INITIAL <br>RENTAL*</p>
+      </div>
+      <div id="terms"><strong>*Business users only. Initial rental and VAT applies. </strong>Subject to status to over 18s. Indemnities may be required. Ts&Cs apply. Toyota Financial Services.</div>
+    </div>
+
+    <!-- Frame 4 --> 
+    <div class="frame" id="frame--cta">
+      <div class="text-block">
+        <h2 id="js-fontsize" class="text--bold">At <span id="js-centrename"></span></h2>
+      </div>
+      <a href="#" class="cta cta--red">Find out <br>more<span id="arrow"><img src="arrow.png"></span></a>
+    </div>
+
+
+    
+
+  </div> <!-- end of container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+  <script src="setup.js"></script>
+  <script src="animations.js"></script>
+  
+ </body>
+</html>

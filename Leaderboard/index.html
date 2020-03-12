@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+  <title>Toyota - Leaderboard [FLEET]</title>
+  <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style type="text/css">
+  #container {
+    position: absolute;
+    border: 1px solid #000000;
+    overflow: hidden;
+    width: 728px;
+    height: 90px;
+    background-color: #000000;
+    color: transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #loading {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: inline-block;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  #loading_image {
+    position:absolute;
+    left:50%;
+    margin-left:-15px;
+    top:50%;
+    margin-top:-15px; 
+  }
+
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: block;
+    color: transparent;
+    text-decoration: none;
+    background: #FFFFFF;
+    cursor: pointer;
+    opacity: 0;
+  }
+  </style>
+
+  <style>
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+       /* IE10+ specific styles go here */  
+       #terms {
+        color: red !important;
+       }
+    }
+  </style>
+  
+  <link rel="stylesheet" type="text/css" href="main.css">
+  
+</head>
+
+<body>
+   <div id="container">
+
+    <div id="loading">
+    <!-- Loading Animation -->
+      <div id="loading_image">
+        <img src="loading.gif" alt="loading">
+      </div>
+    </div>
+    
+    <div id="overlay"></div>
+
+    <img src="bg.jpg" id="img--bg" alt="Toyota C-HR">
+    <img src="logo--toyota.jpg" width="64" id="logo--toyota" alt="Toyota logo">
+    <img src="logo--slogan.jpg" width="64" id="logo--slogan" alt="Toyota slogan logo">
+    <img src="logo--hybrid.png" width="65" id="logo--hybrid" alt="Toyota hybrid logo">
+    <img src="highlight_01.png" id="highlight-1" alt="">
+    <img src="highlight_02.png" id="highlight-2" alt="">
+
+    <!-- Frame 1 -->    
+    <div class="animated frame" id="frame--title">
+      <div>
+        <h2 class="font--bold">
+          <div class="transition-2" id="text-1">NEW TOYOTA </div>
+          <div id="text-2">C-HR HYBRID</div>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Frame 2 -->    
+    <div class="animated frame" id="frame--slogan">
+      <div>
+        <h2 class="font--bold">
+          <div id="text-3">LEAVE ORDINARY</div>
+          <div class="transition-2" id="text-4">BEHIND</div>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Frame 3 --> 
+    <div class="animated frame" id="frame--finance">
+      <div class="text-block">
+        <span class="text--smallest underline--blk">Design</span>
+        
+        <table width="350" id="finance-table" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td width="40%" valign="top">
+              
+              <table width="90%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="font--bold text--large" valign="top">£241</td>
+                </tr>
+                <tr>
+                  <td class="text--smallest underline--blue" valign="top">+VAT PER MONTH*</td>
+                </tr>
+                
+              </table>
+            </td>
+            <td width="2%" style="border-right: 1px solid #000;"></td>
+            <td width="4%"></td>
+            <td width="50%" valign="top">
+              <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="font--bold text--large" valign="top">£1,446</td>
+                </tr>
+                <tr>
+                  <td valign="top" class="text--smallest">+VAT INITIAL RENTAL*</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <small id="terms"><strong>*Business users only. Initial rental and VAT applies. </strong><br>Subject to status to over 18s. Indemnities may be required. <br>Ts&Cs apply. Toyota Financial Services.</small>
+    </div>
+
+   
+
+    <!-- Frame 4 --> 
+    <div class="frame" id="frame--cta">
+      <div class="text-block">
+        <h2 id="js-fontsize" class="font--bold text--tight">At <span id="js-centrename"></span></h2>
+      </div>
+      <a href="#" id="findoutmore"><strong>Find out more</strong><span id="arrow"><img src="arrow.png"></span></a>
+    </div>
+
+  </div> <!-- End of container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+  <script src="setup.js"></script>
+  <script src="animations.js"></script>
+ </body>
+</html>
